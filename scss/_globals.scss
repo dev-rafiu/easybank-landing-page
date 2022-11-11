@@ -82,8 +82,11 @@ p {
     opacity: 0;
     transition: opacity 150ms ease-in-out;
   }
-  &:hover::before {
-    opacity: 1;
+
+  @media (hover: hover) {
+    &:hover::before {
+      opacity: 1;
+    }
   }
 }
 

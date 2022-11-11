@@ -81,11 +81,13 @@
               transition: opacity 300ms ease-in-out;
             }
 
-            &:hover {
-              color: var(--dark-blue);
+            @media (hover: hover) {
+              &:hover {
+                color: var(--dark-blue);
 
-              &::before {
-                opacity: 1;
+                &::before {
+                  opacity: 1;
+                }
               }
             }
           }

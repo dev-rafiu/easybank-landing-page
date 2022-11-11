@@ -24,8 +24,10 @@
   a:not(.cta) {
     color: var(--white);
 
-    &:hover {
-      color: var(--lime-green);
+    @media (hover: hover) {
+      &:hover {
+        color: var(--lime-green);
+      }
     }
   }
 

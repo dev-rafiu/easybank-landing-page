@@ -112,8 +112,10 @@ p {
   opacity: 0;
   transition: opacity 150ms ease-in-out;
 }
-.cta:hover::before {
-  opacity: 1;
+@media (hover: hover) {
+  .cta:hover::before {
+    opacity: 1;
+  }
 }
 
 ul {
@@ -207,6 +209,8 @@ a {
     opacity: 0;
     transition: opacity 300ms ease-in-out;
   }
+}
+@media (min-width: 64em) and (hover: hover) {
   .header .container .nav ul a:hover {
     color: var(--dark-blue);
   }
@@ -453,8 +457,10 @@ a {
 .footer a:not(.cta) {
   color: var(--white);
 }
-.footer a:not(.cta):hover {
-  color: var(--lime-green);
+@media (hover: hover) {
+  .footer a:not(.cta):hover {
+    color: var(--lime-green);
+  }
 }
 .footer .socials {
   display: flex;
