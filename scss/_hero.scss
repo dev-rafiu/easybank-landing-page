@@ -3,6 +3,7 @@
 .hero {
   background-color: var(--very-light-gray);
   // background: tomato;
+  display: none;
 
   .container {
     @include mixins.breakpoint-up(large) {

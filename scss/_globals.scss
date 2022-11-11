@@ -5,13 +5,36 @@
   align-items: center;
 }
 
+h1,
+h2,
+h3 {
+  color: var(--dark-blue);
+  font-weight: 300;
+  // margin-bottom: 1.5rem;
+}
+
 h1 {
   font-size: 2.31rem;
-  // margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 
   @include mixins.breakpoint-up(large) {
     font-size: var(--font-xlg);
   }
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.5625rem;
+
+  @include mixins.breakpoint-up(large) {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
+}
+
+p {
+  color: var(--grayish-blue);
+  line-height: 1.5;
 }
 
 .container {
