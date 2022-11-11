@@ -3,10 +3,12 @@
 .footer {
   background-color: var(--dark-blue);
   color: var(--white);
-  padding: 2.5rem;
   text-align: center;
+  padding: 2.5rem;
 
   .container {
+    padding: 1.5rem;
+
     @include mixins.breakpoint-up(large) {
       display: grid;
       grid-template-columns: 2fr 1fr 1fr 3fr;

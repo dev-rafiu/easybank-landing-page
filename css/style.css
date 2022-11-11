@@ -74,7 +74,6 @@ p {
 .container {
   width: min(100%, 69.375rem);
   margin: 0 auto;
-  background: hotpink;
 }
 .container--pall {
   padding-top: 4.375rem;
@@ -244,7 +243,6 @@ a {
 
 .hero {
   background-color: var(--very-light-gray);
-  display: none;
 }
 @media (min-width: 64em) {
   .hero .container {
@@ -313,7 +311,6 @@ a {
 }
 .hero .hero__text {
   text-align: center;
-  background: lightgray;
 }
 .hero .hero__text h1 {
   color: var(--dark-blue);
@@ -337,7 +334,6 @@ a {
 .features {
   background-color: var(--light-grayish-blue);
   text-align: center;
-  display: none;
 }
 @media (min-width: 40em) {
   .features {
@@ -434,8 +430,11 @@ a {
 .footer {
   background-color: var(--dark-blue);
   color: var(--white);
-  padding: 2.5rem;
   text-align: center;
+  padding: 2.5rem;
+}
+.footer .container {
+  padding: 1.5rem;
 }
 @media (min-width: 64em) {
   .footer .container {
