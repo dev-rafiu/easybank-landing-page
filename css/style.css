@@ -378,10 +378,12 @@ a {
 .articles {
   background-color: var(--very-light-gray);
 }
+.articles__grid {
+  display: grid;
+  gap: 1.2rem;
+}
 @media (min-width: 40em) {
   .articles__grid {
-    display: grid;
-    gap: 1.2rem;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -458,7 +460,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 1.5rem 0;
   font-size: 1.5rem;
 }
