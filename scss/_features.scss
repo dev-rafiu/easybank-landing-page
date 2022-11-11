@@ -3,6 +3,7 @@
 .features {
   background-color: var(--light-grayish-blue);
   text-align: center;
+  display: none;
 
   @include mixins.breakpoint-up(medium) {
     text-align: left;

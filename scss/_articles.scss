@@ -1,0 +1,59 @@
+@use "./mixins";
+
+.articles {
+  background-color: var(--very-light-gray);
+  &__grid {
+    @include mixins.breakpoint-up(medium) {
+      display: grid;
+      gap: 1.2rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mixins.breakpoint-up(large) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  .article {
+    background-color: var(--white);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+
+    &__image {
+      height: 12.5rem;
+      display: block;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    &__text {
+      padding: 1.875rem 1.875rem 2.5rem 1.875rem;
+      color: var(--grayish-blue);
+
+      @include mixins.breakpoint-up(medium) {
+        padding: 1.875rem 1.5625rem;
+      }
+    }
+
+    &__author {
+      font-size: 0.625rem;
+      margin-bottom: 0.75rem;
+    }
+
+    &__title {
+      font-size: 1.0625rem;
+      line-height: 1.2;
+      color: var(--dark-blue);
+      margin-bottom: 0.5rem;
+
+      &:hover {
+        color: var(--lime-green);
+      }
+    }
+
+    &__description {
+      font-size: 0.9rem;
+    }
+  }
+}
