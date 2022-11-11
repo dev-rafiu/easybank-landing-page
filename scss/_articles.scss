@@ -2,6 +2,8 @@
 
 .articles {
   background-color: var(--very-light-gray);
+  // display: none;
+
   &__grid {
     @include mixins.breakpoint-up(medium) {
       display: grid;

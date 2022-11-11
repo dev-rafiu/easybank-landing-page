@@ -40,6 +40,7 @@ p {
 .container {
   width: min(100%, 69.375rem);
   margin: 0 auto;
+  background: hotpink;
 
   &--pall {
     padding-top: 4.375rem;
@@ -65,11 +66,10 @@ p {
   );
   border: 0;
   border-radius: 50px;
-  cursor: pointer;
   color: var(--white);
   font-weight: 400;
   font-size: var(--font-sm);
-  // transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 
   &::before {
     content: "";
@@ -78,6 +78,7 @@ p {
     right: 0;
     bottom: 0;
     left: 0;
+    border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.25);
     opacity: 0;
     transition: opacity 150ms ease-in-out;
