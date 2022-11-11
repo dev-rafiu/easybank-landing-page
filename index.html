@@ -4,7 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EASYBANK LANDING PAGE</title>
+
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Public+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- scc file -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- js file -->
+    <script src="./script.js" defer></script>
+    <title>Easybank Landing Page</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container flex container--pall">
+        <a href="#">
+          <img src="./logo.svg" class="logo" alt="logo" />
+        </a>
+
+        <nav class="nav">
+          <ul class="nav-links flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <a href="#" class="cta hide-on-mobile">Request Invite</a>
+
+        <button
+          id="menu-btn"
+          class="menu-btn hide-on-desktop"
+          aria-label="menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__image"></div>
+
+          <div class="hero__text container--pall">
+            <h1>
+              Next generation <br />
+              digital banking
+            </h1>
+            <p>
+              Take your financial life online. Your Easybank account will be a
+              one-stop-shop for spending, saving, budgeting, investing, and much
+              more.
+            </p>
+            <a href="#" class="cta hero__cta">Request Invite</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>

@@ -1,0 +1,41 @@
+:root {
+  //  ###primary
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+
+  //   ### Neutral
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+
+  // fonts
+  --font-sm: 0.875rem; // 14px
+  --font-med: 1.125rem; // 18px
+  --font-lg: 1.25rem;
+  --font-xlg: 3.25rem;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Public Sans", sans-serif;
+  overflow-x: hidden;
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
